@@ -1,2 +1,2 @@
-#Simplistic and Elegant Pomodoro Timer
+# Simplistic and Elegant Pomodoro Timer
 
