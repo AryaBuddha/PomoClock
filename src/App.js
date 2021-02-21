@@ -1,12 +1,13 @@
 import { ChakraProvider } from "@chakra-ui/react"
-import { Countdown } from "./components/Countdown.jsx"
+
+import { MainContent } from "./components/MainContent.jsx"
 
 function App() {
   return (
 
     <ChakraProvider>
 
-      <Countdown />
+      <MainContent />
 
     </ChakraProvider>
 
