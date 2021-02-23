@@ -12,6 +12,7 @@ export const MainContent = () => {
   const [type, setType] = useState("Work");
 
   const options = ["Work", "Short Break", "Long Break"]
+
   
   return (
     <Box backgroundColor="#23272d" w="100%" pt="5%" pb="100%">
