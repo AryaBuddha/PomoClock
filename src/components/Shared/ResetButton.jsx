@@ -14,17 +14,8 @@ const ResetButton = (props) => {
             w="50px"
             onClick={() => {
                 
-                props.setTick(props.defaultTick)
-
-
-                const minutes = Math.floor(props.defaultTick/60)
-                let seconds = Math.floor(props.defaultTick%60)
-                seconds = seconds.toLocaleString('en-US', {
-                    minimumIntegerDigits: 2,
-                    useGrouping: false
-                })
-        
-                props.setClock(`${minutes}:${seconds}`)
+                props.resetClock()
+                props.setPaused(true)
                 
             }}
         >

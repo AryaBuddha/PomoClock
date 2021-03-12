@@ -13,7 +13,7 @@ export const ToggleButton = (props) => {
     })
 
     useEffect(() => {
-        if(props.tick == 0){
+        if(props.tick == 0 || props.paused){
             const style = "solid"
             const text = "Start"
 

@@ -4,7 +4,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-import WorkCountdown from "./Countdowns/WorkCountdown.jsx";
+import Countdown from "./Countdown.jsx";
 
 import CountdownPicker from "./CountdownRadio/CountdownPicker.jsx"
 
@@ -23,16 +23,7 @@ export const MainContent = () => {
 
 
 
-        {type == "Work" &&
-
-          <WorkCountdown />
-        }
-        {type == "Short Break" &&
-          <h1 style={{color:"white"}}>Short Break</h1>
-        }
-        {type == "Long Break" &&
-          <h1 style={{color:"white"}}>Long Break</h1>
-        }
+        <Countdown type={type} />
         
 
       </VStack>
